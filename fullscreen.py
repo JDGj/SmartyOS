@@ -24,6 +24,6 @@ def create_fullscreen_button(root, fullscreen_icon, exit_fullscreen_icon):
 # Load fullscreen icons
 def load_fullscreen_icons():
     # Replace sensitive paths with placeholders
-    fullscreen_icon = Image.open("<fullscreen_icon_path>").resize((30, 30), Image.Resampling.LANCZOS)
-    exit_fullscreen_icon = Image.open("<exit_fullscreen_icon_path>").resize((30, 30), Image.Resampling.LANCZOS)
+    fullscreen_icon = Image.open("fullscreen.png").resize((30, 30), Image.Resampling.LANCZOS)
+    exit_fullscreen_icon = Image.open("fullscreen-out.png").resize((30, 30), Image.Resampling.LANCZOS)
     return ImageTk.PhotoImage(fullscreen_icon), ImageTk.PhotoImage(exit_fullscreen_icon)
